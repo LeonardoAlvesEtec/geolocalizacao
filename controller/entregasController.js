@@ -17,6 +17,7 @@ class EntregasController {
           this.view.updateEntregadorLocation(nextPoint);
         } else {
           console.log("Entrega simulada concluída!");
+          alert("Seu pedido chegou!")
           clearInterval(this.intervalId);
           Model.resetRoute();
         }

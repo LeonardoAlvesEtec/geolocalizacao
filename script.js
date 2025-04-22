@@ -37,7 +37,7 @@ var map = tt.map({
 
          display.textContent = minutes + ":" + seconds;
 
-         if (--timer < 0) { timer = 0;} }, 1000);}
+         if (--timer < 0) { timer = 0;} }, 1000); }
 
         window.onload = function () {
         
@@ -46,13 +46,8 @@ var map = tt.map({
          display = document.querySelector('#safeTimerDisplay');
         
          startTimer(time, display);
-        
+
+          
         };
 
-        exports.handler = async (event, context) => {
-          // Lógica de autenticação aqui
-          return {
-            statusCode: 200,
-            body: JSON.stringify({ message: "Usuário autenticado!" }),
-          };
-        };
+    
